@@ -1,9 +1,9 @@
 import streamlit as st
 from spiritual_ai import gerar_conteudo_espiritual
 
-# 🌿 Carrega o estilo ritualístico EXTERNO (aqui que corrige!)
-with open("ritual_style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# 🌿 Carrega o estilo ritualístico EXTERNO (temporariamente comentado para evitar erro no Streamlit atual)
+# with open("ritual_style.css") as f:
+#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # 🌿 Título e introdução
 st.markdown("""
@@ -17,9 +17,9 @@ A IA gerará um plano completo com fases do ciclo ritualístico, arquétipos, fi
 
 Este plano te ajudará a estruturar campanhas cerimoniais, jornadas de conversão com alma e lançamentos com coerência ritual.
 
-⚠️ Importante: Esta IA não gera marketing comum — ela convoca, nutre e converte através do campo ritualístico, respeitando o caminho da alma e do pertencimento.  
+⚠️ *Importante:* Esta IA não gera marketing comum — ela convoca, nutre e converte através do campo ritualístico, respeitando o caminho da alma e do pertencimento.  
 
-🌞 Use com presença, intenção e beleza ritualística.
+🌞 *Use com presença, intenção e beleza ritualística.*
 """, unsafe_allow_html=True)
 
 # 🌿 Seletor de tipo de conteúdo
@@ -74,16 +74,7 @@ tema = st.text_input("Qual é o tema ou intenção do conteúdo?")
 # 🌿 Botão para gerar o conteúdo
 if st.button("✨ Gerar conteúdo ritualístico"):
     with st.spinner("Gerando conteúdo cerimonial... ✨"):
-        resultado = gerar_conteudo_espiritual(
-            tema,
-            opcao,
-            canal,
-            profundidade,
-            True,  # usar_assinatura (você quer que use)
-            ritual_nome,
-            "",  # outro_ritual_nome (campo não implementado no painel, deixamos vazio)
-            ""   # estrategia_tipo (campo não implementado no painel, deixamos vazio)
-        )
+        resultado = gerar_conteudo_espiritual(tema, opcao, canal, profundidade, True, ritual_nome, "", "")
 
     st.markdown("### 🌸 Conteúdo gerado:")
     st.markdown(resultado)
