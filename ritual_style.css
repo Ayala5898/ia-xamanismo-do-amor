@@ -1,80 +1,36 @@
-/* Fundo ritualístico */
 body {
-    background: linear-gradient(180deg, #0d0d0d, #1b0f0a, #3a1c0f, #5a2e1c);
-    color: #f5f0e6;
-}
-
-/* Título */
-h1 {
-    color: #d4af37;
-    text-align: center;
-}
-
-/* Subtítulos */
-h2, h3, h4 {
-    color: #f5f0e6;
-}
-
-/* Texto normal */
-p {
-    color: #f5f0e6;
-}
-
-/* Links */
-a {
-    color: #d4af37;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-/* Botões */
-.stButton > button {
-    background-color: #5a3b83;
-    color: #f5f0e6;
-    border-radius: 6px;
-    padding: 6px 12px;
-    font-size: 16px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-.stButton > button:hover {
-    background-color: #1b0f0a;
-    color: #d4af37;
-}
-
-/* Caixas de seleção e input */
-.stTextInput > div > div > input,
-.stSelectbox > div > div {
-    background-color: #5a3b83;
-    color: #f5f0e6;
-    border-radius: 6px;
-    padding: 6px;
-}
-
-/* Markdown */
-.stMarkdown {
+    background-color: #faf3e0;
+    color: #3e2723;
     font-family: 'Georgia', serif;
-    color: #f5f0e6;
+    font-size: 18px;
 }
 
-/* Rodapé escondido */
-footer {
-    visibility: hidden;
+h1, h2, h3 {
+    color: #6a1b9a;
 }
 
-/* Ajuste para celular */
-@media screen and (max-width: 768px) {
-    body {
-        background: linear-gradient(180deg, #0d0d0d, #1b0f0a, #3a1c0f, #5a2e1c);
-    }
-    h1 {
-        font-size: 28px;
-    }
-    .stButton > button {
-        font-size: 14px;
-        padding: 5px 10px;
-    }
+a {
+    color: #ba68c8;
+}
+
+.stButton>button {
+    background-color: #8e24aa;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.stButton>button:hover {
+    background-color: #6a1b9a;
+}
+
+.stSelectbox label {
+    font-weight: bold;
+    color: #4e342e;
+}
+
+.stTextInput label {
+    font-weight: bold;
+    color: #4e342e;
 }
