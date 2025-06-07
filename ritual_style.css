@@ -1,36 +1,19 @@
+/* Estilo base seguro */
 body {
-    background-color: #faf3e0;
-    color: #3e2723;
-    font-family: 'Georgia', serif;
-    font-size: 18px;
+    background-color: #fdfaf5; /* tom de fundo ritualístico claro */
+    color: #333333; /* cor de texto padrão */
+    font-family: 'Georgia', serif; /* fonte ritualística simples */
+    line-height: 1.6;
 }
 
-h1, h2, h3 {
-    color: #6a1b9a;
+h1, h2, h3, h4 {
+    color: #d4af37; /* dourado suave */
 }
 
 a {
-    color: #ba68c8;
+    color: #a864a8; /* lilás ritualístico */
 }
 
-.stButton>button {
-    background-color: #8e24aa;
-    color: #fff;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-}
-
-.stButton>button:hover {
-    background-color: #6a1b9a;
-}
-
-.stSelectbox label {
-    font-weight: bold;
-    color: #4e342e;
-}
-
-.stTextInput label {
-    font-weight: bold;
-    color: #4e342e;
+strong {
+    color: #e75480; /* rosa ritualístico */
 }
