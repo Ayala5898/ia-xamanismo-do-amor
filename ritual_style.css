@@ -1,0 +1,80 @@
+/* Fundo ritualístico */
+body {
+    background: linear-gradient(180deg, #0d0d0d, #1b0f0a, #3a1c0f, #5a2e1c);
+    color: #f5f0e6;
+}
+
+/* Título */
+h1 {
+    color: #d4af37;
+    text-align: center;
+}
+
+/* Subtítulos */
+h2, h3, h4 {
+    color: #f5f0e6;
+}
+
+/* Texto normal */
+p {
+    color: #f5f0e6;
+}
+
+/* Links */
+a {
+    color: #d4af37;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+.stButton > button {
+    background-color: #5a3b83;
+    color: #f5f0e6;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.stButton > button:hover {
+    background-color: #1b0f0a;
+    color: #d4af37;
+}
+
+/* Caixas de seleção e input */
+.stTextInput > div > div > input,
+.stSelectbox > div > div {
+    background-color: #5a3b83;
+    color: #f5f0e6;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+/* Markdown */
+.stMarkdown {
+    font-family: 'Georgia', serif;
+    color: #f5f0e6;
+}
+
+/* Rodapé escondido */
+footer {
+    visibility: hidden;
+}
+
+/* Ajuste para celular */
+@media screen and (max-width: 768px) {
+    body {
+        background: linear-gradient(180deg, #0d0d0d, #1b0f0a, #3a1c0f, #5a2e1c);
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .stButton > button {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
